@@ -1,0 +1,147 @@
+/* ===== GOOGLE FONT ===== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ===== DARK BACKGROUND ===== */
+body {
+    background: #0f1117;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(20, 25, 30, 0.8);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid #1f2937;
+}
+
+.navbar h1 {
+    color: #00ff88;
+    text-shadow: 0 0 10px #00ff88;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+/* ===== GREEN GLOW HOVER ===== */
+.navbar a:hover {
+    color: #00ff88;
+    text-shadow: 0 0 8px #00ff88;
+}
+
+/* ===== HERO SECTION ===== */
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h2 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero span {
+    color: #00ff88;
+    text-shadow: 0 0 15px #00ff88;
+}
+
+.hero p {
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* ===== BUTTON STYLE ===== */
+.btn {
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: 2px solid #00ff88;
+    background: transparent;
+    color: #00ff88;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    background: #00ff88;
+    color: #000;
+    box-shadow: 0 0 20px #00ff88;
+}
+
+/* ===== GLASS CARD ===== */
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(0,255,136,0.2);
+    padding: 25px;
+    border-radius: 15px;
+    margin: 20px;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px #00ff88;
+}
+
+/* ===== WEATHER SECTION ===== */
+.weather-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.weather-card {
+    max-width: 350px;
+    margin: 20px auto;
+}
+
+/* ===== INPUT FIELD ===== */
+input {
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #00ff88;
+    background: #1a1f27;
+    color: white;
+    margin: 10px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 10px #00ff88;
+}
+
+/* ===== PRODUCT GRID ===== */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px;
+    gap: 20px;
+}
+
+/* ===== FOOTER ===== */
+footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #1f2937;
+    color: #aaa;
+}
+.cheapest {
+    color: #00ff88;
+    font-weight: bold;
+    text-shadow: 0 0 8px #00ff88;
+}

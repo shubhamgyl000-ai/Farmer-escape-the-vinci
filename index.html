@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <h1>AgroSmart 🌾</h1>
+    <div>
+        <a href="#">Home</a>
+        <a href="#">Seeds</a>
+        <a href="#">Weather</a>
+        <a href="dashboard.html">Dashboard</a>
+    </div>
+</nav>
+
+<section class="products">
+
+    <div class="card">
+        <h3>🌱 Wheat Seeds</h3>
+        <p>High Yield Certified</p>
+        <p>₹55/kg</p>
+        <button class="btn" onclick="addToCart('Wheat Seeds', 499)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>🌾 Rice Seeds</h3>
+        <p>Premium Quality</p>
+        <p>₹50/kg</p>
+        <button class="btn" onclick="addToCart('Rice Seeds', 599)">Add to Cart</button>
+    </div>
+    <div class="card">
+        <h3>🌾 Maize Seeds</h3>
+        <p>Premium Quality</p>
+        <p>₹120/kg</p>
+        <button class="btn" onclick="addToCart('Rice Seeds', 80)">Add to Cart</button>
+    </div>
+    <div class="card">
+        <h3>🌾 Barley Seeds</h3>
+        <p>Premium Quality</p>
+        <p>₹60/kg</p>
+        <button class="btn" onclick="addToCart('Rice Seeds', 599)">Add to Cart</button>
+    </div>
+    <div class="card">
+        <h3>🌾 Sorghum Seeds</h3>
+        <p>Premium Quality</p>
+        <p>₹80/kg</p>
+        <button class="btn" onclick="addToCart('Rice Seeds', 599)">Add to Cart</button>
+    </div>
+
+    <div class="card">
+        <h3>🚜 Fertilizer</h3>
+        <p>Organic Boost</p>
+        <p>₹299</p>
+        <button class="btn" onclick="addToCart('Fertilizer', 299)">Add to Cart</button>
+    </div>
+
+</section>
+
+<button class="btn" onclick="openCart()">🛒 View Cart</button>
+
+<!-- Cart Modal -->
+<div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <h3>Total: ₹<span id="cartTotal">0</span></h3>
+        <button class="btn" onclick="checkout()">Checkout</button>
+        <button class="btn" onclick="closeCart()">Close</button>
+    </div>
+</div>
+
+<section class="weather-section">
+    <button class="btn" onclick="detectWeather()">🌦 Detect My Weather</button>
+<div id="weatherResult"></div>
+</section>
+
+<footer>
+    © 2026 AgroSmart | Empowering Indian Farmers 🇮🇳
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
