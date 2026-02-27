@@ -206,4 +206,28 @@ async function detectWeather() {
     }, () => {
         alert("Please allow location access.");
     });
+
+}
+async function getWeather() {
+    const city = document.getElementById("city").value;
+
+    const res = await fetch(`/api/weather/${city}`);
+    const data = await res.json();
+
+    const forecast = data.list.slice(0, 5);
+
+    let output = `<h3>${data.city.name}</h3>`;
+
+    forecast.forEach(item => {
+        output += `
+            <div class="forecast-card">
+                <p><b>${new Date(item.dt_txt).toLocaleString()}</b></p>
+                <p>🌡 Temp: ${item.main.temp} °C</p>
+                <p>💧 Humidity: ${item.main.humidity}%</p>
+                <p>🌥 ${item.weather[0].description}</p>
+            </div>
+        `;
+    });
+
+    document.getElementById("weatherResult").innerHTML = output;
 }
