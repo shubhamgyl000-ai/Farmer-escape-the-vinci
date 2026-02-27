@@ -64,4 +64,7 @@
 .dash-card:hover {
     transform: translateY(-8px);
     box-shadow: 0 0 20px #00ff88;
+
 }
+.h3{ color: white;
+   }
